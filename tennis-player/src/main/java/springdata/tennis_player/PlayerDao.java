@@ -50,4 +50,9 @@ public class PlayerDao {
                 player.getId() }
         );
     }
+
+    public int deletePlayerById(int id) {
+        String sql="DELETE FROM PLAYER WHERE ID = ?";
+        return jdbcTemplate.update(sql, new Object[] {id});
+    }
 }

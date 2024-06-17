@@ -1,4 +1,4 @@
-package springdata.tennis_player;
+package springdata.tennis_player.jdbc;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.sql.Date;
 
 @SpringBootApplication
 public class TennisPlayerApplication implements CommandLineRunner {

@@ -1,10 +1,18 @@
-package springdata.tennis_player;
+package springdata.tennis_player.jpa;
+
+import jakarta.persistence.*;
 
 import java.sql.Date;
 
+@Entity
+@Table(name="Player")
 public class Player {
+    @Id
+    @GeneratedValue
     private int id;
     private String name;
+
+    @Column(name="nationality")
     private String nationality;
     private Date birthDate;
     private int titles;
@@ -13,9 +21,8 @@ public class Player {
 
     }
 
-    public Player(int id, String name, String nationality, Date birthDate, int titles) {
+    public Player(String name, String nationality, Date birthDate, int titles) {
         super();
-        this.id = id;
         this.name = name;
         this.nationality = nationality;
         this.birthDate = birthDate;

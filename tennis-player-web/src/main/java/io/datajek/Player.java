@@ -1,3 +1,5 @@
+package io.datajek;
+
 import java.sql.Date;
 
 public class Player {

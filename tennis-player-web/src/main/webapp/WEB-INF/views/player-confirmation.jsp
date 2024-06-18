@@ -4,16 +4,17 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Main Menu</title>
+<title>Player Confirmation</title>
 </head>
 <body>
-	<h2> Spring MVC - Tennis Player Database</h2>
-
-	<hr><br>
-	<a href="showPlayerForm"> Search Player</a>
+	<h2>Player Confirmation</h2>
+	<hr>
 
 	<br><br>
-	<a href="player/showPlayerForm"> Add Player Details</a>
+	The player has been added.
+
+	<br><br>
+	<b>Name</b> : ${athlete.lastName}
 
 </body>
 </html>

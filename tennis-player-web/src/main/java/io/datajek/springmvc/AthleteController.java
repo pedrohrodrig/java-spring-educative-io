@@ -13,7 +13,7 @@ public class AthleteController {
     @RequestMapping("/showPlayerForm")
     public String showForm(Model model) {
         model.addAttribute("athlete", new Athlete());
-        return "add-player-form.jsp";
+        return "add-player-form";
     }
 
     //method to handle /processPlayerForm

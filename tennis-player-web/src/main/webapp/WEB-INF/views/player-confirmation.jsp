@@ -28,8 +28,8 @@
     <br><br>
     <b>Grand Slam Titles</b> :
     <ul>
-		<c:forEach items="${athlete.grandSlams}" var="grandSlam">
-			<li>${grandSlam}</li>
+		<c:forEach items="${athlete.titles}" var="title">
+			<li>${title}</li>
 		</c:forEach>
 	</ul>
 

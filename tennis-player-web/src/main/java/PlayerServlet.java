@@ -1,3 +1,4 @@
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,16 +11,8 @@ public class PlayerServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
-        PrintWriter out = response.getWriter();
-        out.println("<html>");
-        out.println("<head>" +
-                "<title>Player DB</title>" +
-                "</head>");
-        out.println("<body>" +
-                "<H2>Welcome to the Tennis Players database!</H2>" +
-                "</body>");
-        out.println("</html>");
+            throws IOException, ServletException {
+        request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
     }
 
 }
